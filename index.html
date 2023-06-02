@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meraki</title>
+
+  <!-- Nếu có logo thì bạn đặt nó vào trong href của thẻ link này nhé -->
+  <link rel="shortcut icon" type="image/icon" href="image/ĐẶT VÀO ĐÂY" />
+  <!-- ---  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+
+<!-- Hầu hết giao diện được làm dựa theo flex box hoặc grid.
+Nếu phần nào chưa rõ bạn có thể lên gg search grid hoặc flex box. -->
+
+
+<body>
+
+  <!-- Header Start -->
+  <header>
+    <div class="header--container">
+      <div class="header">
+        <div class="header--logo">
+          <img src="image/Meraki logo.svg" alt="Logo" />
+        </div>
+        <div class="header--direct">
+          <ul>
+            <li>Sản phẩm</li>
+            <li>Tin tức</li>
+            <li>Liên hệ</li>
+            <li><img src="image/Flag.svg" alt="Flag" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chỗ này sử dụng thư viện swiper để tạo banner, có thể tham khảo bootstrap hoặc một vài thư viện khác như tailwind,..  -->
+    <div class="swiper--container swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="slide1 swiper-slide"><img src="image/iStock-1320995370 1.png">
+          <p>Tạo cơ hội cho doanh nghiệp vừa và nhỏ tiếp cận thị trường tiềm năng</p>
+        </div>
+        <div class="slide2 swiper-slide"><img src="image/paul-teysen-bukjsECgmeU-unsplash 1.png"></div>
+      </div>
+      <div class="swiper-button-next custom--swipper"></div>
+      <div class="swiper-button-prev custom--swipper"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- === -->
+
+  </header>
+  <!-- Header End  -->
+
+  <!-- Main feature product  -->
+  <section class="main--feature">
+    <div class="main--feature--heading">
+      <p>Các ngành hàng chính</p>
+    </div>
+    <div class="main--feature--body">
+      <div class="main--feature--body--item">
+        <div class="main--feature--body--item--inside">
+          <img src="image/FMCG.png">
+          <h3>Tiêu dùng</h3>
+          <div class="line"></div>
+          <p>Tất cả sản phẩm tiêu dùng nhanh như bánh kẹo, nước giải khát và hoá mỹ phẩm</p>
+        </div>
+      </div>
+      <div class="main--feature--body--item">
+        <div class="main--feature--body--item--inside">
+          <img src="image/Healthcare.png">
+          <h3>Y tế</h3>
+          <div class="line"></div>
+          <p>Các sản phẩm thuốc, thực phẩm chức năng và thiết bị y tế</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End  -->
+
+  <!-- Consumer product  -->
+  <!-- Phần consumer product với phần news tương tự nhau, tạo một container bao ngoài, dùng display flex
+  Tiếp theo tạo item card bên trong, sau đó coppy ra làm 4 item là được
+  Nếu chưa rõ thì bạn có thể tìm hiểu display flex hoặc grid nhé -->
+  <section class="consumer--product">
+    <div class="consumer--product--heading">
+      <p>Sản phẩm tiêu dùng</p>
+    </div>
+    <div class="consumer--product--body">
+      <div class="consumer--product--item">
+        <div class="card">
+          <div class="card--tag">
+            <p>Nhập khẩu</p>
+          </div>
+          <div class="card--top">
+            <img src="image/image 1.png">
+          </div>
+          <div class="card--body">
+            <p>Bánh xốp Get Git vị chanh - Lốc x 10 gói x 42g</p>
+          </div>
+          <div class="card--bottom">
+            <p>12.246.000đ</p>
+            <button>Mua</button>
+          </div>
+        </div>
+      </div>
+      <div class="consumer--product--item">
+        <div class="card">
+          <div class="card--tag">
+            <p>Nhập khẩu</p>
+          </div>
+          <div class="card--top">
+            <img src="image/image 1 (1).png">
+          </div>
+          <div class="card--body">
+            <p>Bánh xốp Get Git vị phô mai - Lốc x 10 gói x 42g</p>
+          </div>
+          <div class="card--bottom">
+            <p>12.246.000đ</p>
+            <button>Mua</button>
+          </div>
+        </div>
+      </div>
+      <div class="consumer--product--item">
+        <div class="card">
+          <div class="card--tag">
+            <p>Nhập khẩu</p>
+          </div>
+          <div class="card--top">
+            <img src="image/image 1 (2).png">
+          </div>
+          <div class="card--body">
+            <p>Bánh xốp Get Git vị chocolate - Lốc x 10 gói x 42g</p>
+          </div>
+          <div class="card--bottom">
+            <p>12.246.000đ</p>
+            <button>Mua</button>
+          </div>
+        </div>
+      </div>
+      <div class="consumer--product--item">
+        <div class="card">
+          <div class="card--tag">
+            <p>Nhập khẩu</p>
+          </div>
+          <div class="card--top">
+            <img src="image/image 1 (3).png">
+          </div>
+          <div class="card--body">
+            <p>Bánh xốp Get Git vị phô mai - Lốc x 10 gói x 42g</p>
+          </div>
+          <div class="card--bottom">
+            <p>12.246.000đ</p>
+            <button>Mua</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="consumer--product--bottom">
+      <a href="#">Xem tất cả sản phẩm</a>
+    </div>
+  </section>
+  <!-- End  -->
+
+  <!-- Partner Start  -->
+  <section class="partner">
+    <div class="partner--heading">
+      <p>Đối tác trong ngành y tế</p>
+    </div>
+    <div class="partner--body">
+      <img src="image/Frame 6439.png">
+      <img src="image/Frame 6435.png">
+      <img src="image/Frame 6436.png">
+      <img src="image/Frame 6437.png">
+      <img src="image/Frame 6438.png">
+    </div>
+    <div class="partner--service">
+      <div class="partner--service--box">
+        <ul>
+          <li>
+            <h3>Dịch vụ cung cấp</h3>
+          </li>
+          <li>
+            <div class="line2"></div>
+          </li>
+          <li>
+            <div class="provide">
+              <h4><span><img src="./image/Vector 7.png"></span>Sản xuất</h4>
+              <p>Hoàn thiện sản phẩm thô, đảm bảo đầu ra cho doanh nghiệp</p>
+            </div>
+          </li>
+          <li>
+            <div class="import">
+              <h4><span><img src="./image/Vector 7.png"></span>Nhập khẩu</h4>
+              <p>Mang sản phẩm của bạn đến gần với người tiêu dùng Việt Nam </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="partner--background">
+      <img src="image/paul-teysen-bukjsECgmeU-unsplash 4.png">
+    </div>
+    <div class="partner--network">
+      <img src="/image/Network.png">
+    </div>
+    <div class="partner--bottom">
+      <h3>Trở thành đối tác của Meraki</h3>
+      <p>Cơ hội mở rộng kinh doanh cho doanh nghiệp của bạn.</p>
+      <button>Liên hệ ngay</button>
+    </div>
+  </section>
+  <!-- End  -->
+
+  <!-- News Start  -->
+  <section class="news">
+    <div class="news--top">
+      <h3>Tin tức</h3>
+    </div>
+    <div class="news--body">
+      <div class="news--body--item">
+        <div class="card">
+          <div class="news--card--top">
+            <img src="./image/news1.png" />
+          </div>
+          <div class="news--card--body">
+            <h4>Chủ tiệm có thể nâng cấp việc kinh doanh như thế nào?</h4>
+            <p>19:18 10/02/2022</p>
+          </div>
+          <div class="news--card--bottom">
+            <p>Đầu tư camera quan sát để quản lý hàng hoá, lắp đặt máy bán hàng POS để hỗ trợ thanh toán chính xác...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="news--card--top">
+            <img src="./image/news2.png" />
+          </div>
+          <div class="news--card--body">
+            <h4>Chủ tiệm có thể nâng cấp việc kinh doanh như thế nào?</h4>
+            <p>19:18 10/02/2022</p>
+          </div>
+          <div class="news--card--bottom">
+            <p>Đầu tư camera quan sát để quản lý hàng hoá, lắp đặt máy bán hàng POS để hỗ trợ thanh toán chính xác...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="news--card--top">
+            <img src="./image/news3.png" />
+          </div>
+          <div class="news--card--body">
+            <h4>Chủ tiệm có thể nâng cấp việc kinh doanh như thế nào?</h4>
+            <p>19:18 10/02/2022</p>
+          </div>
+          <div class="news--card--bottom">
+            <p>Đầu tư camera quan sát để quản lý hàng hoá, lắp đặt máy bán hàng POS để hỗ trợ thanh toán chính xác...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="news--card--top">
+            <img src="./image/news4.png" />
+          </div>
+          <div class="news--card--body">
+            <h4>Chủ tiệm có thể nâng cấp việc kinh doanh như thế nào?</h4>
+            <p>19:18 10/02/2022</p>
+          </div>
+          <div class="news--card--bottom">
+            <p>Đầu tư camera quan sát để quản lý hàng hoá, lắp đặt máy bán hàng POS để hỗ trợ thanh toán chính xác...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news--bottom">
+      <a href="#">Xem tất cả tin tức</a>
+    </div>
+  </section>
+  <!-- End  -->
+
+
+  <!-- Footer Start  -->
+  <footer>
+    <div class="footer--left">
+      <p>Công ty TNHH hàng tiêu dùng Meraki Việt Nam
+        Tầng 6, 174 Thái Hà, Trung Liệt, Quận Đống Đa, Hà Nội
+        Điện thoại: 024 6292 9513</p>
+    </div>
+    <div class="footer--right"><img src="./image/footeritem.png" /></div>
+  </footer>
+  <!-- Footer End  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/swipper.js"></script>
+</body>
+
+</html>
